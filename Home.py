@@ -17,7 +17,7 @@ else:
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
-    df = df.iloc[21:-18]
+    df = df.iloc[21:-29]
     df = df.drop(df.columns[[0, 2]], axis=1)
     df = df.drop(df.index[1])
     df = df.fillna(0)
